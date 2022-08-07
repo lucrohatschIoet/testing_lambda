@@ -1,0 +1,8 @@
+services:
+  app:
+    build: backend/
+    volumes:
+      - ./backend:/var/task
+    ports:
+      - '9000:8080'
+    command: [ "app.home_handler" ]
